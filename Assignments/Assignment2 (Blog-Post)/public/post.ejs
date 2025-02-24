@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title><%= post.title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><%= post.title %></h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="/posts">Home</a>
+            <a href="/add-post">Add New Post</a>
+        </div>
+    </nav>
+    <div class="container post-detail">
+        <p><%= post.content %></p>
+        <a href="/posts" class="back-link">Back to Posts</a>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Blog App</p>
+        </div>
+    </footer>
+</body>
+</html>
